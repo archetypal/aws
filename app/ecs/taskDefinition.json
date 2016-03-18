@@ -1,0 +1,28 @@
+{
+  "taskDefinition": {
+    "taskDefinitionArn": "arn:aws:ecs:us-west-2:829964754427:task-definition/chctelehealth_ui-web:2",
+    "containerDefinitions": [
+      {
+        "name": "ui",
+        "image": "archetypal/ui",
+        "cpu": 0,
+        "memory": 128,
+        "portMappings": [
+          {
+            "containerPort": 80,
+            "hostPort": 80,
+            "protocol": "tcp"
+          }
+        ],
+        "essential": true,
+        "environment": [],
+        "mountPoints": [],
+        "volumesFrom": []
+      }
+    ],
+    "family": "archetypal_ui",
+    "revision": 2,
+    "volumes": [],
+    "status": "ACTIVE"
+  }
+}
